@@ -9,7 +9,6 @@
     @endpush
 
     <div>
-        <!-- pages title header start-->
         <div class="container-fluid">
             <div class="page-title">
                 <div class="card card-absolute mt-5 mt-md-4">
@@ -27,8 +26,6 @@
                 </div>
             </div>
         </div>
-        <!-- pages title header end-->
-        <!-- main content start-->
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
@@ -150,9 +147,7 @@
                 </div>
             </div>
         </div>
-        <!-- main content end-->
     </div>
-    <!-- file wrapper for better tabs start-->
 
     @push('ckeditor-scripts')
         <script src="{{ url('cuba/assets/js/editor/ckeditor/ckeditor.js') }}"></script>
