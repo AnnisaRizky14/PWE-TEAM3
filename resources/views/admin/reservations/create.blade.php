@@ -82,15 +82,15 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon1">
                                                         <svg xmlns="http://www.w3.org/2000/svg"
-                                                            class="icon icon-tabler icon-tabler-currency-dollar" width="20"
+                                                            class="icon icon-tabler icon-tabler-notes" width="20"
                                                             height="20" viewBox="0 0 24 24" stroke-width="2"
                                                             stroke="currentColor" fill="none" stroke-linecap="round"
                                                             stroke-linejoin="round">
                                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                            <path
-                                                                d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2">
-                                                            </path>
-                                                            <path d="M12 3v3m0 12v3"></path>
+                                                            <rect x="5" y="3" width="14" height="18" rx="2"></rect>
+                                                            <line x1="9" y1="7" x2="15" y2="7"></line>
+                                                            <line x1="9" y1="11" x2="15" y2="11"></line>
+                                                            <line x1="9" y1="15" x2="13" y2="15"></line>
                                                         </svg>
                                                     </span>
                                                 </div>
@@ -103,17 +103,12 @@
                                             <div class="input-group mb-3">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon1">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                            class="icon icon-tabler icon-tabler-currency-dollar" width="20"
-                                                            height="20" viewBox="0 0 24 24" stroke-width="2"
-                                                            stroke="currentColor" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                            <path
-                                                                d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2">
-                                                            </path>
-                                                            <path d="M12 3v3m0 12v3"></path>
-                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M3 7l9 6l9 -6" />
+                                                        <path d="M21 7v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                                                    </svg>
+
                                                     </span>
                                                 </div>
                                                 <input class="form-control" id="email" name="email"
@@ -125,17 +120,10 @@
                                             <div class="input-group mb-3">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon1">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                            class="icon icon-tabler icon-tabler-currency-dollar" width="20"
-                                                            height="20" viewBox="0 0 24 24" stroke-width="2"
-                                                            stroke="currentColor" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                            <path
-                                                                d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2">
-                                                            </path>
-                                                            <path d="M12 3v3m0 12v3"></path>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-material icon-material-phone" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                                            <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.27c1.21.48 2.53.73 3.88.73a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C10.07 21.5 2.5 13.93 2.5 4a1 1 0 0 1 1-1H7a1 1 0 0 1 1 1c0 1.35.25 2.67.73 3.88a1 1 0 0 1-.27 1.11l-2.2 2.2z"/>
                                                         </svg>
+
                                                     </span>
                                                 </div>
                                                 <input class="form-control" id="tel_number" name="tel_number"
@@ -147,17 +135,12 @@
                                             <div class="input-group mb-3">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon1">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                            class="icon icon-tabler icon-tabler-currency-dollar" width="20"
-                                                            height="20" viewBox="0 0 24 24" stroke-width="2"
-                                                            stroke="currentColor" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                            <path
-                                                                d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2">
-                                                            </path>
-                                                            <path d="M12 3v3m0 12v3"></path>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                                        <path d="M4 21v-2a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v2" />
                                                         </svg>
+
                                                     </span>
                                                 </div>
                                                 <input class="form-control" id="guest_number" name="guest_number"
