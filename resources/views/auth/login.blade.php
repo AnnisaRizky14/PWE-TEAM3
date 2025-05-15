@@ -11,9 +11,9 @@
                         rame, jadi jangan lupa reservasi ya!">
     <meta name="keywords" content="Restawrant, Open Source Restaurant Website">
     <meta name="author" content="SYAUQIZAIDAN KHAIRAN KHALAF">
-    <link rel="icon" href="{{ url('cuba/assets/images/favicon.ico') }}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{ url('cuba/assets/images/icon-192.png') }}" type="image/x-icon">
-    <title>Masuk Aplikasi - Restawrant</title>
+    <link rel="icon" href="{{ url('images/logo/TR.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url('images/logo/TR.png') }}" type="image/x-icon">
+    <title>Login - Temu Rasa</title>
     @include('includes.backend.style')
 </head>
 
