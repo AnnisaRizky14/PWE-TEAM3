@@ -20,6 +20,10 @@ Route::get('/reservation/step-one', [FrontendReservationController::class, 'step
 Route::post('/reservation/step-one', [FrontendReservationController::class, 'storeStepOne'])->name('reservations.store.step.one');
 Route::get('/reservation/step-two', [FrontendReservationController::class, 'stepTwo'])->name('reservations.step.two');
 Route::post('/reservation/step-two', [FrontendReservationController::class, 'storeStepTwo'])->name('reservations.store.step.two');
+Route::get('/reservation/step-three', [FrontendReservationController::class, 'stepThree'])->name('reservations.step.three');
+Route::post('/reservation/step-three', [FrontendReservationController::class, 'storeStepThree'])->name('reservations.store.step.three');
+Route::get('/reservation/receipt/{id}', [FrontendReservationController::class, 'showReceipt'])->name('reservations.receipt');
+//Route::get('/reservation/receipt/thankyou', [FrontendReservationController::class, 'thankyouFromReceipt'])->name('reservations.receipt.thankyou');
 Route::get('/thankyou', [WelcomeController::class, 'thankyou'])->name('thankyou');
 
 Route::get('/dashboard', function () {

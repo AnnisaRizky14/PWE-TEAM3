@@ -10,6 +10,7 @@ use App\Rules\DateBetween;
 use App\Rules\TimeBetween;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class ReservationController extends Controller
 {
@@ -71,11 +72,55 @@ class ReservationController extends Controller
         $validated = $request->validate([
             'table_id' => ['required']
         ]);
+
         $reservation = $request->session()->get('reservation');
         $reservation->fill($validated);
+
+        // Jangan simpan dulu ke database karena belum bayar DP
+        $request->session()->put('reservation', $reservation);
+
+        return to_route('reservations.step.three');
+    }
+
+
+    public function stepThree(Request $request)
+    {
+        $reservation = $request->session()->get('reservation');
+
+        if (!$reservation) {
+            return redirect()->route('reservations.step.one')->withErrors('Reservation data is missing.');
+        }
+
+        return view('reservations.step-three', compact('reservation'));
+    }
+
+    public function storeStepThree(Request $request)
+    {
+        $reservation = $request->session()->get('reservation');
+
+        if (!$reservation) {
+            return redirect()->route('reservations.step.one')->withErrors('Reservation data is missing.');
+        }
+
+        $reservation->payment_status = 'paid';
         $reservation->save();
+
         $request->session()->forget('reservation');
 
-        return to_route('thankyou');
+        // Redirect ke halaman receipt
+        return redirect()->route('reservations.receipt', ['id' => $reservation->id]);
     }
+
+    public function showReceipt($id)
+    {
+        $reservation = Reservation::findOrFail($id);
+        return view('reservations.receipt', compact('reservation'));
+    }
+
+
+    public function thankyouFromReceipt()
+    {
+        return view('thankyou');
+    }
+
 }
